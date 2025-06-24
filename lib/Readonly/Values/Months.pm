@@ -42,7 +42,7 @@ Readonly::Hash our %months => (
 );
 
 our @EXPORT = qw(
-	$JAN, $FEB, $MAR, $APR, $MAY, $JUN, $JUL, $AUG, $SEP, $OCT, $NOV, $DEC,
+	$JAN $FEB $MAR $APR $MAY $JUN $JUL $AUG $SEP $OCT $NOV $DEC
 	%months
 );
 
