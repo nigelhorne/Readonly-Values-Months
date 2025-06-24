@@ -23,22 +23,35 @@ our $VERSION = '0.01';
 
     use Readonly::Values::Months;
 
+    print $JAN, "\n";	# Prints 1
+
 =cut
 
 Readonly::Enum our ($JAN, $FEB, $MAR, $APR, $MAY, $JUN, $JUL, $AUG, $SEP, $OCT, $NOV, $DEC) => 1;
 Readonly::Hash our %months => (
 	'jan' => $JAN,
+	'january' => $JAN,
 	'feb' => $FEB,
+	'february' => $FEB,
 	'mar' => $MAR,
+	'march' => $MAR,
 	'apr' => $APR,
+	'april' => $APR,
 	'may' => $MAY,
 	'jun' => $JUN,
+	'june' => $JUN,
 	'jul' => $JUL,
+	'july' => $JUL,
 	'aug' => $AUG,
+	'august' => $AUG,
 	'sep' => $SEP,
+	'september' => $SEP,
 	'oct' => $OCT,
+	'october' => $OCT,
 	'nov' => $NOV,
-	'dec' => $DEC
+	'november' => $NOV,
+	'dec' => $DEC,
+	'december' => $DEC
 );
 
 our @EXPORT = qw(
