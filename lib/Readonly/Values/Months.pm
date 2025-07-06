@@ -54,10 +54,34 @@ Readonly::Hash our %months => (
 	'december' => $DEC
 );
 
+Readonly::Array our @month_names => (
+	'january',
+	'february',
+	'march',
+	'april',
+	'may',
+	'june',
+	'july',
+	'august',
+	'september',
+	'october',
+	'november',
+	'december'
+);
+
+Readonly::Array our @short_month_names => map { _shorten($_) } @month_names;
+
 our @EXPORT = qw(
 	$JAN $FEB $MAR $APR $MAY $JUN $JUL $AUG $SEP $OCT $NOV $DEC
 	%months
+	@month_names
+	@short_month_names
 );
+
+# Helper routine: Shorten strings to their first three characters
+sub _shorten {
+	return substr(shift, 0, 3);
+};
 
 =head1 AUTHOR
 
