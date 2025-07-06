@@ -28,12 +28,12 @@ our $VERSION = '0.02';
     print "December is month number $DEC\n";   # December is month number 12
 
     # Lookup a month number by name (case-insensitive keys)
-    my $num = $months{ april };     # 4
+    my $num = $months{'april'};     # 4
     print "April => $num\n";
 
     # Iterate full month names
     for my $name (@month_names) {
-        printf "%-9s => %2d\n", ucfirst $name, $months{$name};
+        printf "%-9s => %2d\n", ucfirst($name), $months{$name};
     }
 
     # Short names (first three letters)
