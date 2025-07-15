@@ -46,6 +46,8 @@ our $VERSION = '0.02';
     #   @month_names
     #   @short_month_names
 
+    print "December is often shortened to $month_names_to_short{december}\n";	# "dec"
+
 =cut
 
 Readonly::Enum our ($JAN, $FEB, $MAR, $APR, $MAY, $JUN, $JUL, $AUG, $SEP, $OCT, $NOV, $DEC) => 1;
@@ -92,11 +94,14 @@ Readonly::Array our @month_names => (
 
 Readonly::Array our @short_month_names => map { _shorten($_) } @month_names;
 
+Readonly::Hash our %month_names_to_short => map { $_ => _shorten($_) } @month_names;
+
 our @EXPORT = qw(
 	$JAN $FEB $MAR $APR $MAY $JUN $JUL $AUG $SEP $OCT $NOV $DEC
 	%months
 	@month_names
 	@short_month_names
+	%month_names_to_short
 );
 
 # Helper routine: Shorten strings to their first three characters
