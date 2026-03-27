@@ -19,6 +19,10 @@ Version 0.03
 
 our $VERSION = '0.03';
 
+=head1 ABSTRACT
+
+Provides %months keyed on lowercase full and abbreviated names
+
 =head1 SYNOPSIS
 
     use Readonly::Values::Months;

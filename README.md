@@ -6,6 +6,10 @@ Readonly::Values::Months - Months Constants
 
 Version 0.03
 
+# ABSTRACT
+
+Provides %months keyed on lowercase full and abbreviated names
+
 # SYNOPSIS
 
     use Readonly::Values::Months;
