@@ -13,11 +13,11 @@ Readonly::Values::Months - Months Constants
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 ABSTRACT
 
@@ -154,7 +154,7 @@ L<http://deps.cpantesters.org/?module=Readonly::Values::Months>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2025 Nigel Horne.
+Copyright 2025-2026 Nigel Horne.
 
 Usage is subject to licence terms.
 
